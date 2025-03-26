@@ -1,0 +1,73 @@
+/* Fullscreen Background */
+body {
+  background-image: url('pexels-joshuaworoniecki-2607956.jpg'); /* Use correct path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Center and enlarge the login box */
+#context {
+  background: rgba(0, 0, 0, 0.4); /* Semi-transparent black */
+  padding: 50px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  width: 400px; /* Increased width */
+}
+
+/* Input Fields */
+input[type="text"], 
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  outline: none;
+  background: transparent; /* Fully transparent */
+  color: white;
+  font-size: 16px;
+  transition: border 0.3s ease-in-out;
+}
+
+/* Input Placeholder Color */
+input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Input focus effect */
+input:focus {
+  border: 2px solid #ff7300;
+}
+
+/* Gradient Button with Image Colors */
+button {
+  background: linear-gradient(45deg, #ff3c00, #ff7300, #ffb700);
+  border: none;
+  color: white;
+  padding: 14px;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+/* Button Hover Effect */
+button:hover {
+  background: linear-gradient(45deg, #ffb700, #ff7300, #ff3c00);
+  transform: scale(1.05);
+}
+
+/* Text inside the login box */
+p {
+  color: crimson;
+  font-size: 16px;
+}
